@@ -2,8 +2,12 @@ h1 a {
     color: #FCA205;
     font-family: 'Lobster';
 }
+
+body {
+  background-image: linear-gradient(teal, white, teal);
+}
 .page-header {
-    background-color: #ff9400;
+    background-image: linear-gradient(aquamarine, green);
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
