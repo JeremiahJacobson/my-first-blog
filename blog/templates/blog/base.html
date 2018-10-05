@@ -22,14 +22,10 @@
         <h1><a href="/blog">Django Blog</a></h1>
         <a href="{% url 'home_view' %}" class="home"><span class="glyphicon glyphicon-Home"></span></a>
     </div>
-    <div class="content container">
-        <div class="row">
-            <div class="col-md-8">
+  
             {% block content %}
             {% endblock %}
-            </div>
-        </div>
-    </div>
+
 </body>
 
 
