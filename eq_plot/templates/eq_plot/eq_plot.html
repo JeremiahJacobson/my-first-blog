@@ -1,0 +1,62 @@
+{% extends "eq_plot/base.html" %}
+{% load static %}
+
+{% block content %}
+<body>
+    <div class="container-fluid">
+        <div class="row">
+			<div class="col-sm-12">
+
+				<div style="
+                            top: 50px;
+                            left:10px;
+                            display: inline-block;">
+
+					<p>Enter a function</p>
+					<p><input type="text" id="funcDef" value=""></p>
+					<p>Enter integer # of data points</p>
+					<p>Changing this number between</p>
+					<p>adding functions does not work yet</p>
+					<p>Give it a try</p>
+					<p><input type="number" id="noPoints" value=50></p>
+					<button onclick="enterDataSet()" id="enterDataSet">Plot Function</button>
+					<p><button onclick="processChecked()" id="removeDataset">Process Checked(not defined)</button></p>
+					<p><button onclick="removeChecked()" id="removeDataset">Remove Checked</button></p>
+					<p id="demo">Equation(s):</p>
+					<p>Checking/unchecking/ removes/re-adds function</p>
+					<ul id ="funcList"></ul>
+
+				</div>
+				<div  class="col-sm-12" style="display: inline-block; left:200px;">
+					<h1 style="">ROCr</h1>
+					<div class="jumbotron">
+						<canvas id="myChart" width="600" height="600"></canvas>
+					</div>
+				</div>
+				<div class="col-sm-12" style=" display: inline-block; left:500px">
+					<p style = "display: block; width: 200px">Equations to try(just copy and paste them</p>
+					<p> into the "Enter a function field): </p>
+					<p><input type="text" id="funcA" value="(12/11)(asin(x))^(1/4)"></p>
+					<button onclick="andFuncs()" id="andButton">AND</button>
+					<button onclick="orFuncs()" id="orButton">OR</button>
+				</p>
+					<p><input type="text" id="funcB" value="tanh(2x)"></p>
+					<p><input type="text" id="" value="x^(1/2)"></p>
+
+					<ul id ="comboList"></ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <br>
+    <br>
+
+
+</body>
+
+<hr>
+<footer>
+</footer>
+{% block js %} {{block.super}} {% endblock %}
+<script src="{% static 'js/plotter.js' %}"></script> {% endblock content %}
