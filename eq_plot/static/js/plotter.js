@@ -524,7 +524,10 @@ function hitEnter(inputId, btnId) {
 // Configuration options go here
 
 var options = {
+
     layout: {
+      devicePixelRatio: 1,
+
         padding: { left: 0, right: 0, top: 0, bottom: 0 }
     },
     legend: { fullWidth: true, boxWidth: 20 },
@@ -560,6 +563,7 @@ var options = {
 
 
 var myLineChart = Chart.Line(canvas, {
+
     data: data,
     options: options
 });
