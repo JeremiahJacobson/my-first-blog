@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'blog',
     'home',
     'eq_plot',
+    'numpy',
+    
 ]
 
 MIDDLEWARE = [

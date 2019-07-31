@@ -529,12 +529,12 @@ var options = {
     },
     legend: { fullWidth: true, boxWidth: 20 },
     responsive: false,
-    maintainAspectRatio: false, title: { display: true, text: 'ROC curves' },
+    maintainAspectRatio: false, title: { display: true, text: 'Data' },
     tooltips: { mode: 'index', intersect: true, },
     hover: { mode: 'nearest', intersect: true },
     scales: {
         xAxes: [{
-            display: true, scaleLabel: { display: true, labelString: 'False Positive' },
+            display: true, scaleLabel: { display: true, labelString: 'X - Axis' },
             ticks: {
                 maxTicksLimit: 10,
                 stepSize: .1
@@ -544,7 +544,7 @@ var options = {
             display: true,
             scaleLabel: {
                 display: true,
-                labelString: 'True Positive'
+                labelString: 'Y - Axis'
             },
             ticks: {
                 beginAtZero: true,
