@@ -5,7 +5,7 @@ h1 a {
 
 body, html{
   height:100%;
-  
+
   margin:0;
   font-size:16px;
 
@@ -59,7 +59,7 @@ body, html{
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Lobster', cursive;
+    
 }
 
 .date {
